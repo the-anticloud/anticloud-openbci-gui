@@ -1,0 +1,587 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "OPENBCI_GUI",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\BRAIN_COMPUTER_INTERFACE\\OPENBCI_GUI\\UPSTREAM_CLONE",
+  "git": {
+   "head": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE",
+   "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 1930,
+  "source_files_scanned": 292,
+  "lines_of_code": 88618,
+  "languages": {
+   ".html": 956,
+   ".pde": 321,
+   ".java": 255,
+   ".png": 70,
+   ".mp3": 34,
+   ".jar": 31,
+   ".py": 26,
+   ".htm": 24,
+   ".dll": 24,
+   ".txt": 22,
+   ".dylib": 16,
+   "(none)": 14,
+   ".md": 12,
+   ".gif": 12,
+   ".so": 12
+  }
+ },
+ "licence": {
+  "spdx": "MIT",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 0,
+  "unique": 0,
+  "by_ecosystem": {},
+  "list": []
+ },
+ "owasp_top10": {
+  "total_findings": 220,
+  "files_with_findings": 178,
+  "severity": {
+   "high": 4,
+   "medium": 0,
+   "low": 216
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "OpenBCI_GUI/libraries/controlP5/src/controlP5/BitFont.java",
+      "line": 37,
+      "cwe": "CWE-327",
+      "snippet": "static public final String standard58base64 = \"AakACQBgACAEAgQGBggGAgMDBAYDBAIGBQMFBQUFBQUFBQICBAUEBQgFBQUFBQUFBQIFBQQGBQUFBQUFBAUGCAUGBQMFAwYGAwQEBAQEBAQEAgQEAgYEBAQEAwQEBAQGBAQEB"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 3,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "OpenBCI_GUI/libraries/controlP5/reference/search.js",
+      "line": 242,
+      "cwe": "CWE-95",
+      "snippet": "var ranking = rankMatch(boundaryMatcher.exec(item.l), catModules);"
+     },
+     {
+      "severity": "high",
+      "file": "OpenBCI_GUI/libraries/controlP5/reference/script-dir/jquery-3.4.1.js",
+      "line": 757,
+      "cwe": "CWE-95",
+      "snippet": "if ( nodeType !== 11 && (match = rquickExpr.exec( selector )) ) {"
+     },
+     {
+      "severity": "high",
+      "file": "OpenBCI_GUI/libraries/controlP5/reference/script-dir/jquery-ui.js",
+      "line": 919,
+      "cwe": "CWE-95",
+      "snippet": "horizontalOffset = roffset.exec( pos[ 0 ] );"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 55,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscBundle.java",
+      "line": 170,
+      "cwe": "CWE-",
+      "snippet": "* @todo get timetag as Date"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscMessage.java",
+      "line": 188,
+      "cwe": "CWE-",
+      "snippet": "* TODO"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscP5.java",
+      "line": 66,
+      "cwe": "CWE-",
+      "snippet": "* TODO add better error message handling for oscEvents, see this post"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscPatcher.java",
+      "line": 198,
+      "cwe": "CWE-",
+      "snippet": "myArguments[myTagIndex] = (new Double(Bytes.toDouble(Bytes"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/AbstractTcpClient.java",
+      "line": 311,
+      "cwe": "CWE-",
+      "snippet": "/**@todo"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/Bytes.java",
+      "line": 99,
+      "cwe": "CWE-",
+      "snippet": "public static double toDouble(byte abyte0[]) {"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/NetP5.java",
+      "line": 50,
+      "cwe": "CWE-",
+      "snippet": "* TODO"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/AudioListener.java",
+      "line": 69,
+      "cwe": "CWE-",
+      "snippet": "// TODO: consider replacing above two methods with this single one"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/AudioRecorder.java",
+      "line": 125,
+      "cwe": "CWE-",
+      "snippet": "// TODO: this should return whatever our \"file handle\" interface winds up being."
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/AudioSample.java",
+      "line": 47,
+      "cwe": "CWE-",
+      "snippet": "// TODO: some kind of event for when a sample finishes playing?"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/MultiChannelBuffer.java",
+      "line": 25,
+      "cwe": "CWE-",
+      "snippet": "// TODO: consider just wrapping a FloatSampleBuffer"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/UGen.java",
+      "line": 243,
+      "cwe": "CWE-",
+      "snippet": "// TODO (ddf) change these two to getValue and setValue?"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/ugens/Gain.java",
+      "line": 85,
+      "cwe": "CWE-",
+      "snippet": "// TODO: not fond of the fact that we cast up to doubles for this math function."
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/ugens/GranulateRandom.java",
+      "line": 260,
+      "cwe": "CWE-",
+      "snippet": "// TODO place randomBetween somewhere more generic and useful."
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/ugens/LiveInput.java",
+      "line": 48,
+      "cwe": "CWE-",
+      "snippet": "// TODO: say the input is mono and output is stereo, what should we do?"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/ugens/Waves.java",
+      "line": 289,
+      "cwe": "CWE-",
+      "snippet": "// TODO a dutycycled sine wavetable : i think a new warp() method in"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/spi/MinimServiceProvider.java",
+      "line": 85,
+      "cwe": "CWE-",
+      "snippet": "* @param inMemory TODO figure out if this inMemory thing really makes sense."
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/javasound/FloatSampleTools.java",
+      "line": 522,
+      "cwe": "CWE-",
+      "snippet": "// TODO: verify the indexes"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/javasound/JSAudioInput.java",
+      "line": 142,
+      "cwe": "CWE-",
+      "snippet": "// TODO: this is sort of terrible, but will do for now. would be much better"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/javasound/JSAudioOutput.java",
+      "line": 106,
+      "cwe": "CWE-",
+      "snippet": "// TODO: ditch readSignal eventually"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/javasound/JSAudioRecording.java",
+      "line": 32,
+      "cwe": "CWE-",
+      "snippet": "// TODO: there is so much here that is the same as JSBaseAudioRecordingStream"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/javasound/JSBaseAudioRecordingStream.java",
+      "line": 494,
+      "cwe": "CWE-",
+      "snippet": "// TODO: consider using mark for marking the starting loop point"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/javasound/JSMinim.java",
+      "line": 266,
+      "cwe": "CWE-",
+      "snippet": "// TODO: deal with the case of wanting to have the file fully in memory"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/minim/src/ddf/minim/analysis/BeatDetect.java",
+      "line": 44,
+      "cwe": "CWE-",
+      "snippet": "* analyze. You may then use the <code>isXXX</code> functions to find out what"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/controlP5/src/controlP5/BitFont.java",
+      "line": 92,
+      "cwe": "CWE-",
+      "snippet": "// line below will replace the hack above"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 161,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/udp/src/UDP.java",
+      "line": 9,
+      "cwe": "CWE-319",
+      "snippet": "* -> http://hypermedia.loeil.org/processing/"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscArgument.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscBundle.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscEventListener.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscIn.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscMessage.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscNetManager.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscP5.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscPacket.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscPatcher.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author              Andreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscPlug.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscProperties.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/oscP5/OscStatus.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/AbstractMulticast.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/AbstractTcpClient.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/AbstractTcpServer.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/AbstractUdpClient.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/AbstractUdpServer.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/Bytes.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/Logger.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/Multicast.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/NetAddress.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/NetAddressList.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/NetInfo.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     },
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/oscP5/src/netP5/NetListener.java",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "* @author\t\tAndreas Schlegel http://www.sojamo.de"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 2,
+  "files_with_findings": 2,
+  "severity": {
+   "high": 1,
+   "medium": 0,
+   "low": 1
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "OpenBCI_GUI/libraries/controlP5/reference/script-dir/jquery-3.4.1.js",
+      "line": 9197,
+      "cwe": "CWE-95",
+      "snippet": "while ( ( match = rheaders.exec( responseHeadersString ) ) ) {"
+     }
+    ]
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "OpenBCI_GUI/libraries/controlP5/src/controlP5/ColorWheel.java",
+      "line": 388,
+      "cwe": "CWE-",
+      "snippet": "h = s = 0; // achromatic"
+     }
+    ]
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:6689b5c8-34cf-53ac-bb1f-3f9d2d295d54",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T09:22:35Z",
+   "component": {
+    "type": "application",
+    "name": "OPENBCI_GUI",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/OPENBCI_GUI@83b357604d34",
+    "purl": "pkg:generic/anticloud/OPENBCI_GUI@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "MIT"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": []
+ },
+ "elapsed_seconds": 75.47
+}
