@@ -1,0 +1,38 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:6689b5c8-34cf-53ac-bb1f-3f9d2d295d54",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-06T06:07:00Z",
+    "component": {
+      "type": "application",
+      "name": "OPENBCI_GUI",
+      "version": "83b357604d34",
+      "bom-ref": "pkg:generic/anticloud/OPENBCI_GUI@83b357604d34",
+      "purl": "pkg:generic/anticloud/OPENBCI_GUI@83b357604d34",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": ""
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": []
+}
